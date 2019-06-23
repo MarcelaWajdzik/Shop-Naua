@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+/*blur*/
+.blur {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.grey {
+    top: 0;
+    left: 0;
+    background-color: rgb(192, 189, 189);
+    z-index: 2;
+    opacity: 0.6;
+}
+
+/*blur*/
+
+/*active*/
+.click {
+    position: absolute;
+    top: -25vh;
+    left: 0;
+    height: 25vh;
+    width: 100%;
+    background-color: white;
+    transition: 0.5s;
+
+
+}
+
+.active {
+    top: 0;
+    z-index: 2;
+
+}
+
+.clicktwo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+
+}
+
+h3 {
+
+    padding: 2%;
+    font-size: 2rem;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+.click form {
+    text-align: center;
+}
+
+.click form input {
+    padding: 1%;
+}
+
+.click form input#submit {
+    border: black 1px solid;
+    background-color: black;
+    color: white;
+}
+
+.clickt form input#search {
+
+    border: 1px solid gray;
+
+}
+
+.click i.fa-times {
+
+    position: relative;
+    font-size: 30px;
+    margin-top: 2%;
+    display: block;
+    margin-left: calc(100% - 15px);
+    cursor: pointer;
+
+}
+
+/*active*/
+
+
+
+
+
+/*basket*/
+.shopping {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    z-index: 2;
+    right: -50vh;
+    height: 100vh;
+    width: 50vh;
+    background-color: rgb(241, 241, 234);
+    align-content: center;
+    border-left: 1px solid rgb(231, 227, 227);
+    transition: 0.5s;
+
+}
+
+.show {
+    right: 0vh;
+}
+
+
+.shopping h3 {
+    margin-top: 10%;
+    margin-left: 2%;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+
+}
+
+h3 i.fa-times {
+    margin-left: 50%;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+i.fa-shopping-basket {
+    font-size: 10rem;
+    color: rgb(168, 164, 164);
+    opacity: 0.4;
+    margin-left: calc(50% - 5rem);
+    margin-top: 50%;
+    margin-bottom: 5%;
+
+}
+
+.shopping p {
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+
+
+/*basket*/
+
+
+
+
+/*logo*/
+
+i.fa-search,
+i.fa-shopping-cart {
+    cursor: pointer;
+}
+
+a i.fa-facebook {
+    color: black;
+}
+
+a i.fa-facebook:hover {
+    color: rgb(59, 89, 152)
+}
+
+/*logo*/
+
+/*nav*/
+
+ul.navNaua {
+    font-size: 1.2rem;
+}
+
+ul.navNaua a.nav-link {
+    transition: 0.2s;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+ul.navNaua a.nav-link:hover {
+    color: black;
+    border-bottom: 1px solid black;
+
+}
+
+/*nav*/
+
+/*header*/
+.pictureOne {
+    position: absolute;
+    height: 30vh;
+    width: 40vh;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+
+}
+
+.pictureTwo {
+    position: relative;
+
+}
+
+img.change {
+    width: 100%;
+    animation: imageHome 6s linear infinite;
+    border: 1px solid rgba(151, 146, 146, 0.5);
+}
+
+
+
+@keyframes imageHome {
+    0% {
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    92% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*header*/
+
+/*main section */
+
+
+
+.one {
+    top: 0;
+    left: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.two {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+
+
+.one:hover .two {
+    display: inline;
+
+}
+
+.three {
+    margin-top: 25vh;
+}
+
+
+h1.green {
+    font-size: 1.3rem;
+    font-weight: 300;
+
+}
+
+
+
+/*main section */
+
+
+/*footer */
+
+.nauaFooter {
+    background-color: rgba(211, 207, 207, 0.445);
+}
+
+span.border {
+
+    display: block;
+    margin-top: 2%;
+    height: 5vh;
+    width: 100%;
+    border-top: 1px solid rgba(144, 143, 143, 0.5);
+    border-bottom: 1px solid rgba(156, 156, 156, 0.5);
+
+}
+
+
+p.price {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 0.9rem;
+
+}
+
+p.description {
+    font-size: 1.3rem;
+}
+
+ol.policyList li {
+    font-size: 1rem;
+    margin-top: 1%;
+}
+
+ul.description li {
+    list-style-type: circle;
+}
+
+@media(max-width:992px) {
+
+    ul.navNaua a.nav-link:hover {
+
+        border-bottom: 0px solid white;
+        margin-left: 2%;
+
+    }
+}
