@@ -251,32 +251,15 @@ img.change {
 /*main section */
 
 
-
-.one {
-    top: 0;
-    left: 0;
-    position: relative;
-    display: inline-block;
-}
-
 .two {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-
-
-.one:hover .two {
-    display: inline;
+    opacity: 0;
 
 }
 
-.three {
-    margin-top: 25vh;
+.two:hover {
+    opacity: 1;
 }
+
 
 
 h1.green {
@@ -284,6 +267,8 @@ h1.green {
     font-weight: 300;
 
 }
+
+
 
 
 
